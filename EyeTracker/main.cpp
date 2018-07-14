@@ -99,6 +99,7 @@ int main(int argc, const char** argv)
 	cascade.load(cascadeName);
 	pairCascade.load(pairCascadeName);
 
+
 	capture.open(camera);
 	capture.set(CV_CAP_PROP_FRAME_WIDTH, 1280);
 	capture.set(CV_CAP_PROP_FRAME_HEIGHT, 720);

@@ -230,6 +230,7 @@ Rect detectAndDraw(Mat& img, CascadeClassifier& cascade, CascadeClassifier& nest
 	resize(gray, smallImg, Size(), fx, fx, INTER_LINEAR);
 	equalizeHist(smallImg, smallImg);
 
+
 	t = (double)getTickCount();
 	cascade.detectMultiScale(smallImg, faces, 1.1, 2, 0, Size(30, 30));
 

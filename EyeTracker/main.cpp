@@ -83,9 +83,9 @@ int main(int argc, const char** argv)
 
 	cv::CommandLineParser parser(argc, argv,
 		"{help h||}"
-		"{cascade|../data/haarcascade_frontalface_alt.xml|}"
-		"{nested-cascade|../data/haarcascade_eye_tree_eyeglasses.xml|}"
-		"{pair-cascade|../data/pairCascade.xml|}"
+		"{cascade|haarcascade_frontalface_alt.xml|}"
+		"{nested-cascade|haarcascade_eye_tree_eyeglasses.xml|}"
+		"{pair-cascade|pairCascade.xml|}"
 		"{scale|1|}{try-flip||}{@filename||}"
 	);
 
@@ -232,7 +232,7 @@ Rect detectAndDraw(Mat& img, CascadeClassifier& cascade, CascadeClassifier& nest
 
 
 	t = (double)getTickCount();
-	cascade.detectMultiScale(smallImg, faces, 1.1, 2, 0, Size(10, 10));
+	cascade.detectMultiScale(smallImg, faces, 1.1, 2, 0, Size(30, 30));
 
 	if (tryflip)
 	{

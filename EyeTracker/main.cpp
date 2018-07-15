@@ -232,7 +232,7 @@ Rect detectAndDraw(Mat& img, CascadeClassifier& cascade, CascadeClassifier& nest
 
 
 	t = (double)getTickCount();
-	cascade.detectMultiScale(smallImg, faces, 1.1, 2, 0, Size(30, 30));
+	cascade.detectMultiScale(smallImg, faces, 1.1, 2, 0, Size(10, 10));
 
 	if (tryflip)
 	{

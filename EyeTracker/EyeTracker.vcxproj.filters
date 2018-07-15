@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Biblioteca">
+      <UniqueIdentifier>{2428ce8f-7864-4aa1-a229-d0c67072aada}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\constants.h">
@@ -71,5 +74,16 @@
     <ClCompile Include="flandmark_detector.cpp">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Biblioteca\haarcascade_frontalface_alt.xml">
+      <Filter>Biblioteca</Filter>
+    </Xml>
+    <Xml Include="Biblioteca\pairCascade.xml">
+      <Filter>Biblioteca</Filter>
+    </Xml>
+    <Xml Include="Biblioteca\haarcascade_eye_tree_eyeglasses.xml">
+      <Filter>Biblioteca</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

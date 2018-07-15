@@ -145,6 +145,11 @@
     <ClCompile Include="liblbp.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Biblioteca\haarcascade_eye_tree_eyeglasses.xml" />
+    <Xml Include="Biblioteca\haarcascade_frontalface_alt.xml" />
+    <Xml Include="Biblioteca\pairCascade.xml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

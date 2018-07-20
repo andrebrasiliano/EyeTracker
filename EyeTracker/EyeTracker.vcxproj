@@ -85,14 +85,14 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\opencv\build\x64\vc14\bin;C:\opencv\build\x64\vc15\bin;C:\opencv\build\include;C:\opencv\build\x64\vc15\lib;C:\kcftracker\x64\Debug;C:\kcftracker\src;%OPENCV_DIR%\include;%KCF_DIR%\Debug;%KCF_DIR%\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\opencv\build\x64\vc15\bin;C:\opencv\build\include;C:\opencv\build\x64\vc15\lib;C:\kcftracker\x64\Debug;C:\kcftracker\src;%OPENCV_DIR%\include;%KCF_DIR%\Debug;%KCF_DIR%\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\andrebrasiliano\source\repos\EyeTracker\EyeTracker\Debug;C:\opencv\build\x64\vc15\bin;C:\kcftracker\Debug;C:\opencv\build\x64\vc15\lib;%KCF_DIR%\Debug;%KCF_DIR%\src;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_world341d.lib;kcf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_world342d.lib;kcf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,6 +149,9 @@
     <Xml Include="Biblioteca\haarcascade_eye_tree_eyeglasses.xml" />
     <Xml Include="Biblioteca\haarcascade_frontalface_alt.xml" />
     <Xml Include="Biblioteca\pairCascade.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Biblioteca\flandmark_model.dat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

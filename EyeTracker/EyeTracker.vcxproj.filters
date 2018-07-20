@@ -68,10 +68,10 @@
     <ClCompile Include="liblbp.cpp">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="flandmark_detector.cpp">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
-    <ClCompile Include="flandmark_detector.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
   </ItemGroup>
@@ -85,5 +85,10 @@
     <Xml Include="Biblioteca\haarcascade_eye_tree_eyeglasses.xml">
       <Filter>Biblioteca</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Biblioteca\flandmark_model.dat">
+      <Filter>Biblioteca</Filter>
+    </None>
   </ItemGroup>
 </Project>

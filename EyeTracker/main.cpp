@@ -83,9 +83,9 @@ int main(int argc, const char** argv)
 
 	cv::CommandLineParser parser(argc, argv,
 		"{help h||}"
-		"{cascade|haarcascade_frontalface_alt.xml|}"
-		"{nested-cascade|haarcascade_eye_tree_eyeglasses.xml|}"
-		"{pair-cascade|pairCascade.xml|}"
+		"{cascade|C:\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_alt.xml|}"
+		"{nested-cascade|C:\\opencv\\sources\\data\\haarcascades\\haarcascade_eye_tree_eyeglasses.xml|}"
+		"{pair-cascade|C:\\opencv\\sources\\data\\haarcascades\\pairCascade.xml|}"
 		"{scale|1|}{try-flip||}{@filename||}"
 	);
 
@@ -323,11 +323,10 @@ void Frames_seg() {
 
 void detectEyesCorners(Mat img) {
 
-
 	Mat boxFace = img.clone();
 	cvtColor(boxFace, boxFace, CV_BGR2GRAY);
 	IplImage* src_grayIPL = cvCloneImage(&(IplImage)boxFace);
-	FLANDMARK_Model * model = flandmark_init("flandmark_model.dat");
+	FLANDMARK_Model * model = flandmark_init("C:\\Users\\andrebrasiliano\\source\\repos\\EyeTracker\\EyeTracker\\Biblioteca\\flandmark_model.dat");
 	int bbox[] = { r.x, r.y, r.width + r.x, r.height + r.y };
 	double * landmarks = (double*)malloc(2 * model->data.options.M * sizeof(double));
 	flandmark_detect(src_grayIPL, bbox, model, landmarks);

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{3A7B0892-B06F-37F8-9153-14E1513C1BC5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>KCF</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">KCF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\kcftracker\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">KCF.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">KCF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\kcftracker\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">KCF.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">KCF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\kcftracker\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">KCF.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">KCF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%OPENCV_DIR%\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stitching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_superres320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videostab320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_aruco320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bgsegm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bioinspired320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ccalib320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dpm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_face320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_fuzzy320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_line_descriptor320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_optflow320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_reg320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_rgbd320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_saliency320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stereo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_structured_light320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_surface_matching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_tracking320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xfeatures2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ximgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xobjdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xphoto320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_shape320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_photo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_calib3d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_phase_unwrapping320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_video320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_datasets320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dnn320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_plot320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_text320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_features2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_flann320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_objdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_highgui320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ml320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videoio320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgcodecs320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/kcftracker/Debug/KCF.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/kcftracker/Debug/KCF.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stitching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_superres320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videostab320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_aruco320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bgsegm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bioinspired320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ccalib320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dpm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_face320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_fuzzy320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_line_descriptor320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_optflow320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_reg320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_rgbd320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_saliency320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stereo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_structured_light320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_surface_matching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_tracking320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xfeatures2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ximgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xobjdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xphoto320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_shape320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_photo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_calib3d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_phase_unwrapping320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_video320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_datasets320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dnn320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_plot320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_text320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_features2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_flann320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_objdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_highgui320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ml320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videoio320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgcodecs320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/kcftracker/Release/KCF.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/kcftracker/Release/KCF.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stitching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_superres320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videostab320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_aruco320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bgsegm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bioinspired320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ccalib320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dpm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_face320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_fuzzy320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_line_descriptor320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_optflow320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_reg320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_rgbd320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_saliency320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stereo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_structured_light320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_surface_matching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_tracking320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xfeatures2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ximgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xobjdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xphoto320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_shape320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_photo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_calib3d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_phase_unwrapping320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_video320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_datasets320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dnn320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_plot320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_text320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_features2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_flann320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_objdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_highgui320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ml320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videoio320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgcodecs320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/kcftracker/MinSizeRel/KCF.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/kcftracker/MinSizeRel/KCF.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\LAB_HP\Downloads\KCFcpp-master\KCFcpp-master\src;C:\opencv\build\install\include;C:\opencv\build\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stitching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_superres320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videostab320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_aruco320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bgsegm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_bioinspired320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ccalib320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dpm320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_face320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_fuzzy320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_line_descriptor320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_optflow320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_reg320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_rgbd320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_saliency320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_stereo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_structured_light320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_surface_matching320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_tracking320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xfeatures2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ximgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xobjdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_xphoto320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_shape320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_photo320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_calib3d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_phase_unwrapping320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_video320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_datasets320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_dnn320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_plot320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_text320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_features2d320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_flann320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_objdetect320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_highgui320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_ml320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_videoio320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgcodecs320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_imgproc320d.lib;C:\opencv\build\install\x64\vc14\lib\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/kcftracker/RelWithDebInfo/KCF.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/kcftracker/RelWithDebInfo/KCF.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fhog.cpp" />
+    <ClCompile Include="src\kcftracker.cpp" />
+    <ClCompile Include="src\runtracker.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

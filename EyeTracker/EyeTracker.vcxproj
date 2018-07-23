@@ -85,13 +85,13 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\opencv\build\x64\vc15\bin;C:\opencv\build\include;C:\opencv\build\x64\vc15\lib;C:\kcftracker\x64\Debug;C:\kcftracker\src;%OPENCV_DIR%\include;%KCF_DIR%\Debug;%KCF_DIR%\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\andrebrasiliano\source\repos\EyeTracker\KcfTracker\Debug\;C:\opencv\build\x64\vc15\bin;C:\opencv\build\include;C:\opencv\build\x64\vc15\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\andrebrasiliano\source\repos\EyeTracker\EyeTracker\Debug;C:\opencv\build\x64\vc15\bin;C:\kcftracker\Debug;C:\opencv\build\x64\vc15\lib;%KCF_DIR%\Debug;%KCF_DIR%\src;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\andrebrasiliano\source\repos\EyeTracker\KcfTracker\Debug\;C:\opencv\build\x64\vc15\bin;C:\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world342d.lib;kcf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
